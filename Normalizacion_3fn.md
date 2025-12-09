@@ -90,8 +90,8 @@ Las tablas con clave **compuesta**:
 - Los atributos adicionales dependen del par completo.
 
 **Conclusión:**  
-✔ No existen dependencias parciales.  
-✔ El diseño cumple completamente 2FN.
+No existen dependencias parciales.  
+El diseño cumple completamente 2FN.
 
 ---
 
