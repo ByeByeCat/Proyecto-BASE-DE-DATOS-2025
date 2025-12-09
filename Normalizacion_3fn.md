@@ -62,7 +62,7 @@ Además:
 - Relaciones de tipo lista se convirtieron en tablas intermedias M:N como SUMINISTRA y SE_UTILIZA_EN.
 
 **Conclusión:**  
-✔ Todas las tablas cumplen con 1FN.
+Todas las tablas cumplen con 1FN.
 
 ---
 
@@ -131,8 +131,8 @@ SUMINISTRA y SE_UTILIZA_EN carecen de atributos adicionales → imposible tener 
 - Sus atributos propios dependen del identificador, no entre sí.
 
 **Conclusión:**  
-✔ No existen dependencias transitivas.  
-✔ La base de datos cumple completamente 3FN.
+No existen dependencias transitivas.  
+La base de datos cumple completamente 3FN.
 
 ---
 
@@ -161,11 +161,11 @@ SUMINISTRA y SE_UTILIZA_EN carecen de atributos adicionales → imposible tener 
 
 Después de analizar el diseño final y aplicar rigurosamente Primera, Segunda y Tercera Forma Normal, se concluye que la base de datos final:
 
-- ✔ Elimina redundancia
-- ✔ Mantiene integridad referencial
-- ✔ Evita dependencias parciales y transitivas
-- ✔ Organiza correctamente la información
-- ✔ Es eficiente para consultas, informes y futuros cambios
+- Elimina redundancia
+- Mantiene integridad referencial
+- Evita dependencias parciales y transitivas
+- Organiza correctamente la información
+- Es eficiente para consultas, informes y futuros cambios
 
 **El modelo final está completamente normalizado hasta 3FN y es apto para implementarse en la empresa de confecciones.**
 
