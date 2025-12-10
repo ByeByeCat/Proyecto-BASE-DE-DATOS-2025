@@ -134,5 +134,4 @@ public class Prenda {
                 ", idCliente=" + idCliente +
                 '}';
     }
-
 }
