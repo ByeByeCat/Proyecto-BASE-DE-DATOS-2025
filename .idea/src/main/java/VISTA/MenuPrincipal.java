@@ -93,7 +93,7 @@ public class MenuPrincipal extends JFrame implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == btnVendedor) {
 
-            new MenuVendedor().setVisible(true);
+            new MenuVendedo().setVisible(true);
             this.dispose();
         } else if (e.getSource() == btnCliente) {
             new MenuCliente().setVisible(true);
