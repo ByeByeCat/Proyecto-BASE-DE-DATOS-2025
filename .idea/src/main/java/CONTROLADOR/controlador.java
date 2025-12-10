@@ -1,6 +1,15 @@
 package org.example.controlador;
+import org.example.DAO.*;
+import org.example.MODELO.Usuario;
+import org.example.MODELO.cliente;
+import org.example.MODELO.pedido;
+import javax.swing.*;
+import javax.swing.table.DefaultTableModel;
+import java.sql.Connection;
+import java.util.ArrayList;
+import java.util.Date;
 
-import org.example.modelo.*;
+import org.example.MODELO.*;
 import javax.swing.*;
 
 import static org.example.DAO.DAOcliente.tablaClienteID;
@@ -24,14 +33,14 @@ public class controlador {
     // CLIENTE
     // ---------------------------------------
 
-    public static void agregarCliente(int idCliente, String documento, String nombre, String telefono, JTable tabla){
-        Cliente nuevo = new Cliente(idCliente, documento, nombre, telefono);
+    public static void agregarCliente(int idCliente, String nombreCliente, String telContactoCliente, JTable tabla){
+        Cliente nuevo = new Cliente(idCliente, nombreCliente, telContactoCliente);
         org.example.DAO.DAOcliente.agregarCliente(nuevo);
         tablaClienteID(idCliente, tabla);
     }
 
-    public static void actualizarCliente(int idCliente, String documento, String nombre, String telefono, JTable tabla){
-        Cliente actualizado = new Cliente(idCliente, documento, nombre, telefono);
+    public static void actualizarCliente(int idCliente, String nombreCliente, String telContactoCliente, JTable tabla){
+        Cliente actualizado = new Cliente(idCliente, nombreCliente, telContactoCliente);
         org.example.DAO.DAOcliente.actualizarCliente(actualizado);
         tablaClienteID(idCliente, tabla);
     }
